@@ -9,6 +9,11 @@ app.get("/demo",async (req,res) => {
     res.status(200).json({message:"app is running"})
 })
 
+app.get("/test",(req,res)=>{
+    res.status(200).json({message:"new routes are added"})
+})
+
+
 app.listen(process.env.PORT||5050,()=>{
     console.log("SERVER IS RUNNING")
 })
