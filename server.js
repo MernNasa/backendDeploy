@@ -10,7 +10,7 @@ app.get("/demo",async (req,res) => {
 })
 
 app.get("/test",(req,res)=>{
-    res.status(200).json({message:"new routes are added"})
+    res.status(200).json({message:"new routes are added",url:process.env.MONGODB_URL})
 })
 
 
